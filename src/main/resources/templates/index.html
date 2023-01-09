@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Profile Page</title>
+</head>
+<body>
+<div>
+<h1> Profile List</h1>
+
+<table border=2>
+<thead>
+<tr>
+<th>EmpID</th>
+<th>Name</th>
+<th>RM</th>
+<th>Band</th>
+<th>DOJ</th>
+<th>SkillSet</th>
+<th>Remarks</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td th:text=52111937></td>
+<td th:text=SRIPARNO></td>
+<td th:text=Shilpi></td>
+<td th:text=E1></td>
+<td th:text=10></td>
+<td th:text=JAVA></td>
+<td th:text=Good></td>
+<td><button id="myBtn" onclick="myFunction()">Block</button></td>
+</tr>
+
+
+
+<tr>
+<td th:text=52111936></td>
+<td th:text=SAM></td>
+<td th:text=SHILPI></td>
+<td th:text=E1></td>
+<td th:text=11></td>
+<td th:text=JAVA></td>
+<td th:text=Good></td>
+<td><button id="myBtn1" onclick="myFunction1()">Block</button></td>
+</tr>
+</tbody>
+</table>
+
+
+
+<script>
+const btn = document.getElementById("myBtn")
+const btn1 = document.getElementById("myBtn1")
+function myFunction(){
+    btn.disabled = true;
+    setTimeout(()=>{
+    btn.disabled = false;
+    console.log('Button Activated')}, 172800000)
+   }
+function myFunction1()
+{
+    btn1.disabled=true;
+     setTimeout(()=>{
+    btn1.disabled=false;
+    console.log('Button Activated')}, 172800000)
+}
+</script>
+</body>
+</html>
